@@ -45,22 +45,7 @@
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <34 31>;
-        };
-
-        option_left {
-            bindings = <&kp LA(LEFT)>;
-            key-positions = <54 30 34>;
-        };
-
-        option_right {
-            bindings = <&kp LA(RIGHT)>;
-            key-positions = <19 54 34>;
-        };
-
-        option_backspace {
-            bindings = <&kp LA(BACKSPACE)>;
-            key-positions = <54 31 34>;
+            key-positions = <34 31 25>;
         };
     };
 
