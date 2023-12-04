@@ -47,6 +47,11 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <19 22>;
         };
+
+        caps_lock {
+            bindings = <&kp CAPS>;
+            key-positions = <42 43>;
+        };
     };
 
     keymap {
@@ -61,11 +66,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3        &kp N4        &kp N5                                                &kp N6  &kp N7         &kp N8        &kp N9   &kp N0         &kp MINUS
-&kp TAB    &kp Q   &kp W   &kp F         &kp P         &kp G                                                 &kp J   &kp L          &kp U         &kp Y    &kp SEMICOLON  &kp BACKSLASH
-&kp LCTRL  &kp A   &kp R   &kp S         &kp T         &kp D                                                 &kp H   &kp N          &kp E         &kp I    &kp O          &kp SINGLE_QUOTE
-&kp LSHFT  &kp Z   &kp X   &kp C         &kp V         &kp B      &kp C_VOLUME_DOWN    &kp C_BRIGHTNESS_DEC  &kp K   &kp M          &kp COMMA     &kp DOT  &kp FSLH       &kp RSHFT
-                           &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &kp BACKSPACE        &kp ENTER             &mo 1   &kp RIGHT_GUI  &kp CAPSLOCK
+&kp GRAVE  &kp N1  &kp N2  &kp N3        &kp N4        &kp N5                                                &kp N6  &kp N7         &kp N8     &kp N9   &kp N0         &kp MINUS
+&kp TAB    &kp Q   &kp W   &kp F         &kp P         &kp G                                                 &kp J   &kp L          &kp U      &kp Y    &kp SEMICOLON  &kp BACKSLASH
+&kp LCTRL  &kp A   &kp R   &kp S         &kp T         &kp D                                                 &kp H   &kp N          &kp E      &kp I    &kp O          &kp SINGLE_QUOTE
+&kp LSHFT  &kp Z   &kp X   &kp C         &kp V         &kp B      &kp C_VOLUME_DOWN    &kp C_BRIGHTNESS_DEC  &kp K   &kp M          &kp COMMA  &kp DOT  &kp FSLH       &kp RSHFT
+                           &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &kp BACKSPACE        &kp ENTER             &mo 1   &kp RIGHT_GUI  &mo 2
             >;
         };
 
