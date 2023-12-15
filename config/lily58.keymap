@@ -52,6 +52,16 @@
             bindings = <&kp CAPS>;
             key-positions = <42 43>;
         };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <31 48>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <32 48>;
+        };
     };
 
     keymap {
