@@ -13,11 +13,6 @@
     combos {
         compatible = "zmk,combos";
 
-        layer2 {
-            bindings = <&mo 2>;
-            key-positions = <52 55>;
-        };
-
         escape {
             bindings = <&kp ESCAPE>;
             key-positions = <13 16>;
@@ -48,11 +43,6 @@
             key-positions = <19 22>;
         };
 
-        caps_lock {
-            bindings = <&kp CAPS>;
-            key-positions = <42 43>;
-        };
-
         minus {
             bindings = <&kp MINUS>;
             key-positions = <31 48>;
@@ -76,11 +66,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3        &kp N4        &kp N5                                                &kp N6  &kp N7         &kp N8     &kp N9   &kp N0         &kp MINUS
-&kp TAB    &kp Q   &kp W   &kp F         &kp P         &kp G                                                 &kp J   &kp L          &kp U      &kp Y    &kp SEMICOLON  &kp BACKSLASH
-&kp LCTRL  &kp A   &kp R   &kp S         &kp T         &kp D                                                 &kp H   &kp N          &kp E      &kp I    &kp O          &kp SINGLE_QUOTE
-&kp LSHFT  &kp Z   &kp X   &kp C         &kp V         &kp B      &kp C_VOLUME_DOWN    &kp C_BRIGHTNESS_DEC  &kp K   &kp M          &kp COMMA  &kp DOT  &kp FSLH       &kp RSHFT
-                           &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &kp BACKSPACE        &kp ENTER             &mo 1   &kp RIGHT_GUI  &mo 2
+&kp GRAVE  &kp N1  &kp N2  &kp N3        &kp N4        &kp N5                                 &kp N6  &kp N7         &kp N8         &kp N9   &kp N0         &kp MINUS
+&kp TAB    &kp Q   &kp W   &kp F         &kp P         &kp G                                  &kp J   &kp L          &kp U          &kp Y    &kp SEMICOLON  &kp BACKSLASH
+&kp LCTRL  &kp A   &kp R   &kp S         &kp T         &kp D                                  &kp H   &kp N          &kp E          &kp I    &kp O          &kp SINGLE_QUOTE
+&kp LSHFT  &kp Z   &kp X   &kp C         &kp V         &kp B      &kp CAPS         &tog 2     &kp K   &kp M          &kp COMMA      &kp DOT  &kp FSLH       &kp RSHFT
+                           &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &kp BACKSPACE    &kp ENTER  &mo 1   &kp RIGHT_GUI  &kp RIGHT_ALT
             >;
         };
 
@@ -93,11 +83,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp GRAVE  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4                                           &trans          &trans     &trans  &trans                &trans                 &trans
-&kp F1     &kp F2            &kp F3             &kp F4             &kp F5        &kp F6                                                 &kp DOWN_ARROW  &kp RIGHT  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
-&kp F7     &kp F8            &kp F9             &kp F10            &kp F11       &kp F12                                                &kp LEFT        &trans     &trans  &kp MINUS             &kp EQUAL              &trans
-&trans     &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans        &trans        &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &kp UP_ARROW    &trans     &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-                                                &trans             &trans        &trans        &trans             &trans                &trans          &trans     &trans
+&kp GRAVE  &kp C_VOLUME_DOWN  &kp C_VOL_UP       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &bt BT_SEL 4                    &trans  &trans  &trans                &trans                 &trans  &trans
+&kp F1     &kp F2             &kp F3             &kp F4                &kp F5                &kp F6                          &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans
+&kp F7     &kp F8             &kp F9             &kp F10               &kp F11               &kp F12                         &trans  &trans  &kp MINUS             &kp EQUAL              &trans  &trans
+&trans     &ext_power EP_ON   &ext_power EP_OFF  &ext_power EP_TOG     &trans                &trans        &trans    &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
+                                                 &trans                &trans                &trans        &trans    &trans  &trans  &trans  &trans
             >;
         };
 
