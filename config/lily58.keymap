@@ -37,21 +37,6 @@
             bindings = <&kp RIGHT>;
             key-positions = <19 34>;
         };
-
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <19 22>;
-        };
-
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <31 48>;
-        };
-
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <32 48>;
-        };
     };
 
     keymap {
@@ -100,11 +85,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans  &trans             &trans           &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans             &trans           &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans             &trans           &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                            &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans           &trans           &kp KP_DIVIDE    &kp KP_MULTIPLY  &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &trans
+                        &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_0  &kp KP_DOT       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
