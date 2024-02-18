@@ -38,7 +38,7 @@
 
         Caps_lock {
             bindings = <&kp CAPS>;
-            key-positions = <25 28 31 34>;
+            key-positions = <42 43>;
         };
     };
 
