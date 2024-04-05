@@ -58,7 +58,7 @@
 &kp TAB    &kp Q   &kp W   &kp F         &kp P         &kp G                                                             &kp J   &kp L          &kp U          &kp Y    &kp SEMICOLON  &kp BACKSLASH
 &kp LCTRL  &kp A   &kp R   &kp S         &kp T         &kp D                                                             &kp H   &kp N          &kp E          &kp I    &kp O          &kp SINGLE_QUOTE
 &kp LSHFT  &kp Z   &kp X   &kp C         &kp V         &kp B      &kp LG(LS(LEFT_BRACKET))    &kp LG(LS(RIGHT_BRACKET))  &kp K   &kp M          &kp COMMA      &kp DOT  &kp FSLH       &kp RSHFT
-                           &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &kp ESCAPE                  &kp ENTER                  &mo 1   &kp RIGHT_GUI  &kp RIGHT_ALT
+                           &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &kp SPACE                   &kp ENTER                  &mo 1   &kp RIGHT_GUI  &kp RIGHT_ALT
             >;
         };
 
