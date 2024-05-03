@@ -16,26 +16,6 @@
             key-positions = <13 16>;
         };
 
-        left {
-            bindings = <&kp LEFT>;
-            key-positions = <30 34>;
-        };
-
-        down {
-            bindings = <&kp DOWN>;
-            key-positions = <34 18>;
-        };
-
-        up {
-            bindings = <&kp UP>;
-            key-positions = <44 34>;
-        };
-
-        right {
-            bindings = <&kp RIGHT>;
-            key-positions = <19 34>;
-        };
-
         Caps_lock {
             bindings = <&kp CAPS>;
             key-positions = <42 43>;
